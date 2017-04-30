@@ -23,6 +23,7 @@
 		BF68B13D1EB6876B00CECE0F /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68B13C1EB6876B00CECE0F /* RoundedButton.swift */; };
 		BF68B13F1EB68BC900CECE0F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68B13E1EB68BC900CECE0F /* LoginVC.swift */; };
 		BF68B1421EB6950A00CECE0F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68B1411EB6950A00CECE0F /* AuthService.swift */; };
+		BF68B1441EB6ADD900CECE0F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68B1431EB6ADD900CECE0F /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		BF68B13C1EB6876B00CECE0F /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		BF68B13E1EB68BC900CECE0F /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		BF68B1411EB6950A00CECE0F /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		BF68B1431EB6ADD900CECE0F /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				BF68B1411EB6950A00CECE0F /* AuthService.swift */,
+				BF68B1431EB6ADD900CECE0F /* DataService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				BF4C13E41EAC868A00B430CD /* AppDelegate.swift in Sources */,
 				BF68B13D1EB6876B00CECE0F /* RoundedButton.swift in Sources */,
 				BF68B13B1EB6806C00CECE0F /* RoundTextField.swift in Sources */,
+				BF68B1441EB6ADD900CECE0F /* DataService.swift in Sources */,
 				BF68B13F1EB68BC900CECE0F /* LoginVC.swift in Sources */,
 				BF4C13FA1EAC8CD700B430CD /* PhotoCaptureDelegate.swift in Sources */,
 				BF68B1421EB6950A00CECE0F /* AuthService.swift in Sources */,
