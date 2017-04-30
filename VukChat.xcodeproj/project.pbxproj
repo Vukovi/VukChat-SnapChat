@@ -21,6 +21,8 @@
 		BF68B1391EB5E79300CECE0F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BF68B1381EB5E79300CECE0F /* Podfile */; };
 		BF68B13B1EB6806C00CECE0F /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68B13A1EB6806C00CECE0F /* RoundTextField.swift */; };
 		BF68B13D1EB6876B00CECE0F /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68B13C1EB6876B00CECE0F /* RoundedButton.swift */; };
+		BF68B13F1EB68BC900CECE0F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68B13E1EB68BC900CECE0F /* LoginVC.swift */; };
+		BF68B1421EB6950A00CECE0F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68B1411EB6950A00CECE0F /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		BF68B1381EB5E79300CECE0F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		BF68B13A1EB6806C00CECE0F /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
 		BF68B13C1EB6876B00CECE0F /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		BF68B13E1EB68BC900CECE0F /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		BF68B1411EB6950A00CECE0F /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 		BF4C13E21EAC868900B430CD /* VukChat */ = {
 			isa = PBXGroup;
 			children = (
+				BF68B1401EB694F900CECE0F /* Services */,
 				BF4C13FE1EAC8D1600B430CD /* Delegates */,
 				BF4C13FC1EAC8CFA00B430CD /* Model */,
 				BF4C13FD1EAC8D0400B430CD /* View */,
@@ -105,6 +110,7 @@
 			children = (
 				BF4C13F61EAC8CD700B430CD /* CameraViewController.swift */,
 				BF4C13E51EAC868A00B430CD /* CameraVC.swift */,
+				BF68B13E1EB68BC900CECE0F /* LoginVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -134,6 +140,14 @@
 				BF4C13FF1EAD027600B430CD /* CameraVCDelegate.swift */,
 			);
 			name = Delegates;
+			sourceTree = "<group>";
+		};
+		BF68B1401EB694F900CECE0F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BF68B1411EB6950A00CECE0F /* AuthService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		EB89C20CBF4DBCCAA86686F8 /* Frameworks */ = {
@@ -275,7 +289,9 @@
 				BF4C13E41EAC868A00B430CD /* AppDelegate.swift in Sources */,
 				BF68B13D1EB6876B00CECE0F /* RoundedButton.swift in Sources */,
 				BF68B13B1EB6806C00CECE0F /* RoundTextField.swift in Sources */,
+				BF68B13F1EB68BC900CECE0F /* LoginVC.swift in Sources */,
 				BF4C13FA1EAC8CD700B430CD /* PhotoCaptureDelegate.swift in Sources */,
+				BF68B1421EB6950A00CECE0F /* AuthService.swift in Sources */,
 				BF4C14001EAD027600B430CD /* CameraVCDelegate.swift in Sources */,
 				BF4C13F81EAC8CD700B430CD /* PreviewView.swift in Sources */,
 			);

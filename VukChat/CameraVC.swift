@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class CameraVC: CameraViewController, CameraVCDelegate {
 
@@ -21,7 +22,13 @@ class CameraVC: CameraViewController, CameraVCDelegate {
         self._previewView = previewView //ovo mora da ide iznad super.viewDidLoad() jer mora da se desi pre ucitavnaja viewDidLoad-a superklase tj CameraViewControllera
         super.viewDidLoad()
         
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) { //ovde obavljamo segue jer ne moze u viewDidLoad, jer se on samo jednom jednom ucitava u memoriju, sa svim view-ima, koji nisu vidljivi korisniku, zato ovo radimo kad oni mogu biti vidljivi u viewDidAppear
+        guard FIRAuth.auth()?.currentUser != nil else {
+            performSegue(withIdentifier: "LoginVC", sender: nil)
+            return
+        }
     }
 
     @IBAction func recordBtnPressed(_ sender: UIButton) {
