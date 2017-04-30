@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>410817078442-r1ijf349odh1vdq2f50ivvbk4ocketr4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.410817078442-r1ijf349odh1vdq2f50ivvbk4ocketr4</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDCiT8-dhP33jrZVeK9Dn7xGMoOaZD7zoE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>410817078442</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>vuk.com.VukChat</string>
+	<key>PROJECT_ID</key>
+	<string>vukchat-f0600</string>
+	<key>STORAGE_BUCKET</key>
+	<string>vukchat-f0600.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:410817078442:ios:0c6f4531acc19bb2</string>
+	<key>DATABASE_URL</key>
+	<string>https://vukchat-f0600.firebaseio.com</string>
+</dict>
+</plist>
