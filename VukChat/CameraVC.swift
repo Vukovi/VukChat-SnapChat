@@ -52,7 +52,7 @@ class CameraVC: CameraViewController, CameraVCDelegate {
         print("Promena kamere je \(enabled)")
     }
     
-    
+
     
     func canStartRecording() {
         print("Snimanje moze da pocne")
@@ -88,6 +88,34 @@ class CameraVC: CameraViewController, CameraVCDelegate {
     
     func livePhotoModeFinished() {
         //
+    }
+    
+    func videoRecordingComplete(videoUrl: URL) {
+        performSegue(withIdentifier: "UsersVC", sender: ["videoUrl":videoUrl])
+    }
+    
+    func videoRecordingFailed() {
+        <#code#>
+    }
+    
+    func snpashotTaken(snapshot: Data) {
+        performSegue(withIdentifier: "UsersVC", sender: ["snapshotData":snapshot])
+    }
+    
+    func snapshotFailed() {
+        <#code#>
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let usersVC = segue.destination as? UsersVC {
+            if let videoDict = sender as? Dictionary<String,URL> {
+                let url = videoDict["videoUrl"]
+                usersVC.videoUrl = url
+            } else if let imageDict = sender as? Dictionary<String,Data> {
+                let image = imageDict["snapshotData"]
+                usersVC.imageData = image
+            }
+        }
     }
 }
 

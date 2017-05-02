@@ -20,5 +20,10 @@ protocol CameraVCDelegate {
     func shouldEnableLivePhotoModeButton(enabled: Bool)
     func livePhotoModeStarted()
     func livePhotoModeFinished()
+    
+    func videoRecordingComplete(videoUrl: URL)
+    func videoRecordingFailed()
+    func snpashotTaken(snapshot: Data)
+    func snapshotFailed()
 
 }

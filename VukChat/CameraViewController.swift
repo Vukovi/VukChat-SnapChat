@@ -755,9 +755,12 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 		if error != nil {
 			print("Movie file finishing error: \(error)")
 			success = (((error as NSError).userInfo[AVErrorRecordingSuccessfullyFinishedKey] as AnyObject).boolValue)!
+            self.cameraVCDelegate?.videoRecordingFailed()
 		}
 		
 		if success {
+            self.cameraVCDelegate?.videoRecordingComplete(videoUrl: outputFileURL)
+            /*
 			// Check authorization status.
 			PHPhotoLibrary.requestAuthorization { status in
 				if status == .authorized {
@@ -778,9 +781,10 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 				else {
 					cleanup()
 				}
-			}
+			} */
 		}
 		else {
+            self.cameraVCDelegate?.videoRecordingFailed()
 			cleanup()
 		}
 		
